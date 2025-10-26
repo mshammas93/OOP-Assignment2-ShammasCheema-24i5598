@@ -34,3 +34,16 @@ In the main function, a linked list is created and four features are added: a fo
 This program demonstrates key programming concepts such as abstraction, inheritance, polymorphism, and dynamic memory management, along with practical linked list operations like insertion, deletion, traversal, and reversal.
 
 Question3:
+The program manages a small library system using a doubly linked list to store book information. Each book has an ID, title, and author.
+The Node class represents a single book in the list. Each node stores the book’s details and has two pointers: one pointing to the previous node and one pointing to the next node. This allows the list to be traversed both forward and backward.
+The Library class manages the entire linked list. It has two pointers: head, which points to the first node, and tail, which points to the last node. The class provides several functions to handle different operations.
+The addToBeginning function inserts a new book at the start of the list. If the list is empty, the new book becomes both the head and tail. Otherwise, it is linked before the current head.
+The addToEnd function inserts a new book at the end of the list. If the list is empty, the new node becomes both the head and tail. Otherwise, it is linked after the current tail.
+The addAtPosition function inserts a new book at a specific position. If the position is 1 or less, the book is added at the beginning. If the position is greater than the number of existing books, it is added at the end. Otherwise, the function finds the correct place and links the new node between two existing nodes.
+The deleteBook function removes a book by its ID. It searches through the list, and when it finds the book, it adjusts the pointers of the surrounding nodes so that the book is removed safely. It also updates the head or tail pointers when deleting the first or last node.
+The displayForward function shows all books starting from the head to the tail, while the displayBackward function shows them in reverse order, starting from the tail to the head.
+In the main function, a Library object is created. Three books are added using different insertion methods: one at the beginning, one at the end, and one in the middle. The program then displays the list in both forward and backward directions. After that, the book with ID 2 is deleted, and the updated list is displayed again.
+Overall, this program demonstrates how a doubly linked list can be used to efficiently manage a collection of records, allowing easy insertion, deletion, and traversal in both directions.
+
+Question4:
+
