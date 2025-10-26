@@ -25,3 +25,12 @@ From the third line onward, it prints several 1s followed by a number that decre
 The recursion continues until the line number becomes greater than n, at which point the function stops calling itself.
 This approach avoids loops in the main logic and relies on recursive calls to move from one line to the next. The base case ensures the recursion ends properly.
 In short, the function prints the desired pattern step by step using recursion without using arrays or additional helper functions.
+
+Question2:
+The program is designed to represent and manage different geographical features such as land and water using object-oriented programming and a singly linked list.
+The base class Feature defines a general template for all types of features and includes a pure virtual function called analyze, which makes it an abstract class. Two derived classes, LandFeature and WaterFeature, inherit from Feature and each implement their own version of the analyze function. The LandFeature class prints a message indicating that land has been detected, while the WaterFeature class prints a message indicating that a water body has been detected.
+The SinglyLinkedList class manages a list of these features. Each element in the list, called a node, stores a feature ID, a pointer to a Feature object, and a pointer to the next node. The class provides several functions: inserting a new feature at the end, deleting a feature using its ID, displaying all the features, and reversing the list order. The destructor ensures that all dynamically allocated memory is properly released when the program ends.
+In the main function, a linked list is created and four features are added: a forest, a river, a mountain, and a lake. The list is first displayed in its original order. Then the program deletes the feature with ID 102, which is the river, and shows the updated list. Finally, the list is reversed and displayed again.
+This program demonstrates key programming concepts such as abstraction, inheritance, polymorphism, and dynamic memory management, along with practical linked list operations like insertion, deletion, traversal, and reversal.
+
+Question3:
