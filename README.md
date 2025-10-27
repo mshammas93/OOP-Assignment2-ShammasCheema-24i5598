@@ -46,4 +46,9 @@ In the main function, a Library object is created. Three books are added using d
 Overall, this program demonstrates how a doubly linked list can be used to efficiently manage a collection of records, allowing easy insertion, deletion, and traversal in both directions.
 
 Question4:
+This program creates a movie ticket queue where customers with more tickets get served first. Each customer has an ID, name, and ticket count, and the queue is made using a linked list.
+When a customer joins, they are placed according to how many tickets they have so that those with higher numbers come first. The enqueue function adds them in order, dequeue removes the first customer, and display shows the list of all waiting customers.
+In the main function, several customers are added, one is served, and the updated list is shown. This demonstrates a priority queue based on ticket quantity instead of arrival order
+
+Question5a:
 
