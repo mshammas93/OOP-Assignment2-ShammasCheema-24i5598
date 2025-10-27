@@ -51,4 +51,7 @@ When a customer joins, they are placed according to how many tickets they have s
 In the main function, several customers are added, one is served, and the updated list is shown. This demonstrates a priority queue based on ticket quantity instead of arrival order
 
 Question5a:
-
+This program shows stack implementation using arrays and linked lists. Both versions include push and pop functions for adding and removing elements.
+In part (a), a section of the word “COMPUTER” is reversed using both array and linked list stacks. Elements between two positions are pushed and then popped back to reverse their order.
+In part (b), a numeric pattern of 1s and 2s is printed using both stack types. The stack helps reverse the order of numbers before displaying each line.
+Overall, the code compares how array-based and list-based stacks work through reversing text and generating number patterns.
