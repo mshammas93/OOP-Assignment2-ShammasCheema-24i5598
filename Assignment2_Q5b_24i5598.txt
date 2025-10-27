@@ -1,0 +1,13 @@
+Runtime Analysis of Assignment2_Q5_24i5598;
+
+Both implementations of the stacks perform the same logical operations but vary in how they store and manage the data.
+
+In the array-based stack, elements are stored in a continuous block of memory. The push and pop operations take constant time, O(1), under 
+normal conditions; but when the array becomes full, it must resize by allocating a new array and copying all existing elements-a step that 
+takes O(n) time, with n being the number of elements. Even so, the average time, or amortized time, per operation is still close to O(1) for
+most cases.
+
+In a linked-list-based stack, every element is essentially separate (a node) and has a pointer to the next one. Both push and pop simply 
+adjust pointer links at the top of the stack and each takes O(1) time since no resizing or shifting of elements needs to be done. However, 
+linked lists use extra memory for storing pointers and require dynamic memory allocation for every new node, making them actually a little bit 
+slower in real-world usage despite equal theoretical time complexities.
